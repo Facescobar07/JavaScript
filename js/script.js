@@ -25,7 +25,7 @@ function bienvenida() {
 
 if (bienvenida()) {
     let saldo = 15000
-    let opciones = prompt("Elegí una opción \n1- Saldo. \n2- Extracciones. \n3- Depósitos. \n4- 5 para Salir");
+    let opciones = prompt("Elegí una opción \n1- Saldo. \n2- Extracciones. \n3- Depósitos. \n4- Cuentas. \n5- 5 para salir");
 
     while (opciones !="5") {
 
@@ -48,12 +48,14 @@ if (bienvenida()) {
                 saldo = saldo + Deposito;
                 alert("Depósito exitoso. Tu saldo actual es $" + saldo);
                 break;
+            case "4":
+                let Cuentas = [Pesos,Dólares]     
             default:
                 alert("Opción Inválida");
                 break;
 
         }
-        opciones = prompt("Elegí una opción \n1- Saldo. \n2- Extracciones. \n3- Depósitos. \n4- 5 para Salir");
+        opciones = prompt("Elegí una opción \n1- Saldo. \n2- Extracciones. \n3- Depósitos. \n4- Cuentas \n5- 5 para Salir");
 
 
     }
